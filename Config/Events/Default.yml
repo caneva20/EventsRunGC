@@ -1,0 +1,133 @@
+#Don't change this, or you will probably break the plugin.
+ConfigVersion: 1.0
+CONFIG:
+  #Event name
+  DISPLAY_NAME: ''
+  PERMISSIONS:
+    DEFAULT: 'eventsrun.event.join.default'
+    JOIN_FULL: 'eventsrun.event.join.full'
+  #Time before the event start
+  LOBBY_WAITING_TIME: 300
+  WARMUP_TIME: 10
+  #Players can move while waiting the event start?
+  MOVEMENT:
+    MOVE_WHEN_WAITING: false
+    MOVE_WHEN_WARMUPING: false
+    SEND_MESSAGE_WHEN_TRYING_TO_MOVE: false
+  #Max players
+  MAX_PLAYERS: 10
+  #Min players for the event start
+  MIN_PLAYERS: 2
+  #The event gamemode
+  GAMEMODE: 'Survival'
+  PLAYER_LIVES: 1
+  BLOCK_DAMAGE:
+    BY_PLAYER: true
+    BY_ENTITY: true
+    BY_BLOCKS: true
+  LOADOUTS:
+    GIVE_LOADOUTS: true
+    GIVE_METHOD:
+      #RANDOM, RANDOM_NO_CHECK_PERM, SHOW_INV, SIGN
+      METHOD: RANDOM
+      #Use ONLY if METHOD equals to SHOW_INV
+      SHOW_INV_CONFIG:
+        FORCE_CHOOSE: true
+        DEFAULT_LOADOUT: 'Tanker'
+        INVENTORY_TITLE: '&6Choose your class'    
+    LOADOUTS:
+      Tanker:
+        ID: 'Tanker'
+        PERMISSION: 'eventsrun.event.loadout.tanker'
+        PRIORITY: 2
+      Mage:
+        ID: 'Mage'
+        PERMISSION: 'eventsrun.event.loadout.mage'
+        PRIORITY: 2
+      Archer:
+        ID: 'Archer'
+        PERMISSION: 'eventsrun.event.loadout.archer'
+        PRIORITY: 2
+      Bait:
+        ID: 'Bait'
+        PERMISSION: 'eventsrun.event.loadout.bait'
+        PRIORITY: 2
+      Nothing:
+        ID: null
+        PERMISSION: 'eventsrun.event.loadout.nothing'
+        PRIORITY: 0
+  COUNTDOWN:
+    USE_BAR_API: false
+    USE_PLAYER_EXP_BAR: true
+    USE_PLAYER_LEVEL: true
+  WARMUP:
+    USE_BAR_API: true
+    USE_PLAYER_EXP_BAR: true
+    USE_PLAYER_LEVEL: true
+  TIMER:
+    USE_BAR_API: true
+    USE_PLAYER_EXP_BAR: true
+    USE_PLAYER_LEVEL: true
+  #How much winners the event can have in a same game
+  MAX_WINNERS_COUNT: 3
+  REWARD:
+    1-Winner:
+    - 'give {PLAYER} {PICK_RANDOM(264,265,266)} {RANDOM_NUMBER(1-16)};CONSOLE'
+    2-Winner:
+    - 'give {PLAYER} {PICK_RANDOM_PERCENT(5-30,6-20,7-10)} {RANDOM_NUMBER(1-16)};CONSOLE'
+    3-Winner:
+    - 'give {PLAYER} 1 {RANDOM_NUMBER(1-64)};CONSOLE'
+    - 'give {PLAYER} 4 {RANDOM_NUMBER(1-64)};CONSOLE'
+  ANNOUNCEMENTS:
+    INSIDE:
+      ANNOUNCE_INSIDE: true
+      ANNOUNCE_GLOBALLY: false
+      PLAY_SOUND: true
+      SOUND: NOTE_STICKS
+      TAG: '&7[&a{TIME_REMAINING} &7: &a{EVENT_NAME}&7] '
+      MESSAGES:
+      - '&eStarting in &6{TIME_REMAINING} &esecond(s).'
+      TIMER:
+      - 300
+      - 270
+      - 240
+      - 210
+      - 180
+      - 150
+      - 120
+      - 90
+      - 60
+      - 30
+      - 15
+      - 5
+      - 4
+      - 3
+      - 2
+      - 1
+    GLOBAL:
+      ANNOUNCE_INSIDE: false
+      #Send the messages for who isn't inside the event
+      ANNOUNCE_GLOBALLY: true
+      PLAY_SOUND: true
+      SOUND: NOTE_STICKS
+      TAG: '&7[&a{TIME_REMAINING} &7: &a{EVENT_NAME}&7] '
+      MESSAGES:
+      - '&2|]=----------------------------------=[|'
+      - '&5Starting event &d{EVENT_NAME}&5.'
+      - '&5Remaining waiting time: &d{TIME_REMAINING}&5 second(s).'
+      - '&5Player places remaining: &d{PLACES_REMAINING}&5.'
+      - '&5Players joined: &d{PLAYERS_JOINED}&5.'
+      - '&2|]=----------------------------------=[|'
+      TIMER:
+      - 300
+      - 270
+      - 240
+      - 210
+      - 180
+      - 150
+      - 120
+      - 90
+      - 60
+      - 30
+      - 15
+      - 5

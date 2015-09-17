@@ -1,0 +1,63 @@
+#For colours use this symbol '§' before a colour code. If you use '&' will not work
+#You can write '§' pressing and holding 'Alt' and typing '2' and '1' (21) in your numeric keyboard
+#|]=======================================================[|
+#|]             Colour codes                              [|
+#|] §a = Light green  | §2 = Dark green                   [|
+#|] §b = Light aqua   | §3 = Dark aqua                    [|
+#|] §c = Light red    | §4 = Dark red                     [|
+#|] §d = Light pink   | §5 = Dark pink                    [|
+#|] §e = Light yellow | §6 = Dark yellow (or gold/orange) [|
+#|] §f = Gray         | §7 = White                        [|
+#|]=======================================================[|
+#
+#|]===================================================================[|
+#|]    All the things inside '{}' are variables.                      [|
+#|]    We not recommend change this.                                  [|
+#|]    And if you do, we'll be not responsible for possibles errors.  [|
+#|]    You was warned.                                                [|
+#|]===================================================================[|
+
+#Plugin tags
+PLUGIN_TAG: '§f[§6EventsRunGC§f]'
+PLUGIN_WARN_TAG: '§f[§4!§f]'
+PLUGIN_INFO_TAG: '§f[§6!§f]'
+PLUGIN_WARN_FORM: '{PLUGIN_WARN_TAG}{PLUGIN_TAG}§7: §c{MESSAGE}'
+PLUGIN_INFO_FORM: '{PLUGIN_INFO_TAG}{PLUGIN_TAG}§7: §e{MESSAGE}'
+
+#MOTD
+CREATED_BY: '§aCreated by:'
+VERSION: '§aVersion:'
+TYPE_RUN_EVENTS_FOR_HELP: '§bType §3/EventsRun help §bfor help.'
+INSTEAD_OF_RUN_EVENTS_YOU_CAN_USE_THESE_ALIASES1: '§bInstead of §3/RunEvents §byou can also use these aliases'
+INSTEAD_OF_RUN_EVENTS_YOU_CAN_USE_THESE_ALIASES2: '§3/gc§b, §3/er §band §3/events§b.'
+ALL_OF_THIS_HAS_THE_SAME_RESULT: '§bAll of this has the same result.'
+HAVE_FUN: '§5HAVE FUN!'
+
+#Help
+HELP_PAGE: '§bHelp page'
+ARGUMENTS_INSIDE_MUST_BE_INFORMED: '§aArguments inside ''§2<>§a'' MUST be informed'
+ARGUMENTS_INSIDE_IS_OPTIONAL: '§aArguments inside ''§2[]§a'' is optional'
+DISPLAY_THIS_PAGE: '§e: Display this page'
+DISPLAY_MOTD: '§e: Display the plugin motd'
+
+THE_PAGE_PAGE_WAS_NOT_FOUND: 'The page §4{PAGE}§c was not found'
+YOU_DONT_HAVE_PERMISSION_FOR_THIS: 'You don''t have permission for this'
+
+#Strings for arguments
+PAGE: 'page'
+
+#Anything else
+ONLY_FOR_PLAYERS: 'ONLY for player'
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+#Don't change this, or you will probably break the plugin.
+ConfigVersion: 1.0
+LOCATIONS:
+  WINNING_SIGN:
+    SIGN_COUNT: 0
+  JOIN: 'null'
+  QUIT: 'null'
+  LOBBY: 'null'
